@@ -1,0 +1,273 @@
+{
+ "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+ "name": "brick-mortar-skills",
+ "description": "Brick & Mortar's agent skills: small-business research, Reddit research, platform APIs, trading, personas, creative tools.",
+ "owner": {
+  "name": "Brick & Mortar"
+ },
+ "plugins": [
+  {
+   "name": "bm-creative",
+   "description": "Making things look right: AI art, riffs on a reference, study sheets, brand directions, deterministic video, wallpapers, photo touch-up, UI directions and mobile audits.",
+   "author": {
+    "name": "Brick & Mortar"
+   },
+   "source": "./skills",
+   "strict": false,
+   "skills": [
+    "./ascii-charts",
+    "./beautify",
+    "./brand-direction-plates",
+    "./copy-voice",
+    "./html-to-press-pdf",
+    "./image-riff",
+    "./leonardo",
+    "./make-art",
+    "./melville-annotated-shakespeare",
+    "./mobile-ui-audit",
+    "./photo-touchup",
+    "./quote-wallpapers",
+    "./reel-render",
+    "./thread-wall"
+   ]
+  },
+  {
+   "name": "bm-creative-direction",
+   "description": "How a creative round runs and what good looks like: ask the style once, vary the premise, rank the set, ship the prototype verbatim, reading-first layout, colour that tells the story, their words verbatim, and how to brainstorm without overreaching.",
+   "author": {
+    "name": "Brick & Mortar"
+   },
+   "source": "./skills",
+   "strict": false,
+   "skills": [
+    "./answer-their-framing",
+    "./art-is-chosen-not-filler",
+    "./ask-the-style-question",
+    "./brainstorm-is-not-a-build",
+    "./breadth-after-a-miss",
+    "./brief-numbers-are-the-spec",
+    "./check-the-premise-not-adoption",
+    "./colour-tells-the-story",
+    "./draw-the-digest",
+    "./find-the-spread-before-drawing",
+    "./inspect-before-you-show",
+    "./interview-dont-ghostwrite",
+    "./judge-at-full-size",
+    "./lead-with-the-ceiling-raiser",
+    "./never-hamstring-by-pattern",
+    "./no-dead-white-space",
+    "./no-gloss-on-their-material",
+    "./one-identity-per-publication",
+    "./open-preloaded-with-an-example",
+    "./rank-the-creative-set",
+    "./reading-first-layout",
+    "./sexy-not-scholarly",
+    "./ship-the-prototype-verbatim",
+    "./show-the-quiet-option",
+    "./their-copy-verbatim",
+    "./vary-the-interaction",
+    "./vary-the-premise"
+   ]
+  },
+  {
+   "name": "bm-mac",
+   "description": "Read your Mac's own data on-device: Messages, Mail, Contacts, Calendar, Reminders, Safari, Notes, Photos \u2014 and the OS tools around them.",
+   "author": {
+    "name": "Brick & Mortar"
+   },
+   "source": "./skills",
+   "strict": false,
+   "skills": [
+    "./apple-notes",
+    "./apple-photos",
+    "./chrome-bookmarks",
+    "./mac-app-install",
+    "./mac-automation",
+    "./mac-calendar",
+    "./mac-contacts",
+    "./mac-defaults",
+    "./mac-keychain",
+    "./mac-launchd",
+    "./mac-mail",
+    "./mac-messages",
+    "./mac-network",
+    "./mac-permissions",
+    "./mac-reminders",
+    "./mac-safari-history",
+    "./mac-screen-time",
+    "./mac-screenshots",
+    "./mac-spotlight",
+    "./mac-system-health"
+   ]
+  },
+  {
+   "name": "bm-personas",
+   "description": "Reasoning lenses as personas: a tech economist, an industrial-design critic, a product visionary, a sales closer, and synthetic customers to test an idea on.",
+   "author": {
+    "name": "Brick & Mortar"
+   },
+   "source": "./skills",
+   "strict": false,
+   "skills": [
+    "./industrial-design-critic",
+    "./leadership-teardown",
+    "./product-visionary",
+    "./role-litmus",
+    "./sales-closer",
+    "./simulate-campaign",
+    "./tech-economist"
+   ]
+  },
+  {
+   "name": "bm-platforms",
+   "description": "Working notes for the APIs and dashboards a small software business runs on: Clover, Square, Jobber, Stripe, Vercel, PostHog, Search Console, Google Calendar, Zoho, Apple apps, Chrome, Mixam, remote MCP servers.",
+   "author": {
+    "name": "Brick & Mortar"
+   },
+   "source": "./skills",
+   "strict": false,
+   "skills": [
+    "./browser-as-you",
+    "./build-remote-mcp-server",
+    "./business-inbox",
+    "./claude-usage-mining",
+    "./clover-api",
+    "./dropbox-token",
+    "./gcal",
+    "./gemini-web-search",
+    "./gmail-read",
+    "./goodreads-fetch",
+    "./jobber-api",
+    "./mac-menu-bar-app",
+    "./mcp-stack",
+    "./meta-ad-performance",
+    "./meta-ads-launch",
+    "./mixam-order",
+    "./overnight-job",
+    "./pending-queue",
+    "./product-paywall",
+    "./search-console-setup",
+    "./session-intent",
+    "./site-analytics",
+    "./skill-autoload-hook",
+    "./square-api",
+    "./stripe-dashboard",
+    "./substack-export",
+    "./vercel-api",
+    "./vercel-env",
+    "./zoho-send-cap"
+   ]
+  },
+  {
+   "name": "bm-reddit-research",
+   "description": "What people actually say on Reddit, read free from a public archive on your own machine: pain points, demand checks, tool stacks, competitor chatter, customer language, thread digests.",
+   "author": {
+    "name": "Brick & Mortar"
+   },
+   "source": "./skills",
+   "strict": false,
+   "skills": [
+    "./reddit-competitor-chatter",
+    "./reddit-customer-language",
+    "./reddit-demand-check",
+    "./reddit-mining",
+    "./reddit-pain-points",
+    "./reddit-thread-digest",
+    "./reddit-tool-stack"
+   ]
+  },
+  {
+   "name": "bm-small-business",
+   "description": "Small-business research on top of the Small Business Intelligence MCP server: teardowns, competitor maps, review and pricing reads, local visibility, buyer diligence, public records.",
+   "author": {
+    "name": "Brick & Mortar"
+   },
+   "source": "./skills",
+   "strict": false,
+   "skills": [
+    "./assessment-ratio-study",
+    "./broker-diligence-prep",
+    "./broker-listing-report",
+    "./broker-prospecting-dossier",
+    "./business-teardown",
+    "./competitor-landscape",
+    "./cre-broker-brief",
+    "./deep-dive-report",
+    "./engagement-outreach",
+    "./federal-labor-data",
+    "./find-the-public-record",
+    "./flip-deal-feed",
+    "./local-visibility-audit",
+    "./market-opportunity-scan",
+    "./mpls-permits",
+    "./outscraper-pull",
+    "./pricing-benchmark",
+    "./prospect-discovery",
+    "./records-request",
+    "./review-intelligence",
+    "./sba-loans",
+    "./sector-enrichment",
+    "./sector-playbook-pilot",
+    "./small-business-pulse",
+    "./spec-site-sale",
+    "./strategic-brief",
+    "./trade-vocabulary",
+    "./twin-cities-property-records",
+    "./vertical-market-agent",
+    "./vice-president"
+   ]
+  },
+  {
+   "name": "bm-toolkit",
+   "description": "General method skills: turning sessions into skills, falsifying a dataset's laws, reframing, divergent ideas, distribution, research-paper essays and more.",
+   "author": {
+    "name": "Brick & Mortar"
+   },
+   "source": "./skills",
+   "strict": false,
+   "skills": [
+    "./axioms",
+    "./corpus-signal-mining",
+    "./counterparty-gift",
+    "./crystallize",
+    "./distribution-channel",
+    "./dream",
+    "./github-scout",
+    "./just-do-it",
+    "./reframe",
+    "./research-paper-essay",
+    "./sms-native-product",
+    "./test-it",
+    "./think-big",
+    "./tool-skill-template",
+    "./ux-gift-sweep",
+    "./worth-it"
+   ]
+  },
+  {
+   "name": "bm-trading",
+   "description": "A brokerage-account harness: pull positions, check stops, review the book, realized P&L, entry timing, intrinsic value, sector and catalyst screens.",
+   "author": {
+    "name": "Brick & Mortar"
+   },
+   "source": "./skills",
+   "strict": false,
+   "skills": [
+    "./buffett-checklist",
+    "./entry-timing",
+    "./etrade-pull",
+    "./execute-trade-plan",
+    "./intrinsic-value",
+    "./order-check",
+    "./portfolio-review",
+    "./price-history",
+    "./realized-pnl",
+    "./rebalance-plan",
+    "./sec-financials",
+    "./sector-acceleration",
+    "./thirty-day-catalyst",
+    "./trade-journal"
+   ]
+  }
+ ]
+}
