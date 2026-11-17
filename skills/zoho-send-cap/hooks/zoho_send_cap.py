@@ -22,7 +22,7 @@ CAPS = [  # (window seconds, max sends in any such window)
 MIN_GAP = 90  # seconds between any two sends
 
 LEDGER = os.environ.get("ZOHO_SEND_LEDGER") or os.path.expanduser("~/.claude/state/zoho_sends.jsonl")
-TOOLS = ("ZohoMail_sendEmail", "ZohoMail_sendReplyEmail")
+TOOLS = ("ZohoMail_sendEmail", "ZohoMail_sendReplyEmail", "ZohoMail_send_mail", "ZohoMail_reply_to_mail")
 
 
 def deny(reason):
