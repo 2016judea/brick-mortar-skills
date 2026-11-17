@@ -153,6 +153,7 @@
     "./square-api",
     "./stripe-dashboard",
     "./substack-export",
+    "./tool-launch",
     "./vercel-api",
     "./vercel-env",
     "./zoho-send-cap"

@@ -20,7 +20,7 @@ send** instead of advising against it.
 {
   "hooks": {
     "PreToolUse": [
-      { "matcher": "mcp__zoho-mail__ZohoMail_send.*",
+      { "matcher": "mcp__zoho-mail__ZohoMail_(send|reply).*",
         "hooks": [ { "type": "command",
                      "command": "python3 ~/.claude/hooks/zoho_send_cap.py",
                      "timeout": 10 } ] }
@@ -31,9 +31,9 @@ send** instead of advising against it.
 
 ## What it does
 
-- Counts every `ZohoMail_send_mail` / `ZohoMail_reply_to_mail` (and the older `ZohoMail_sendEmail` /
-  `ZohoMail_sendReplyEmail`) call that is not a draft or template. **Check `TOOLS` against your MCP's live
-  tool list:** on 2026-11-16 the hook matched only the old names, so it counted nothing until fixed, into a ledger at `~/.claude/state/zoho_sends.jsonl` (override with
+- Counts every `ZohoMail_sendEmail` / `ZohoMail_sendReplyEmail` call (and `ZohoMail_send_mail` /
+  `ZohoMail_reply_to_mail`, the names some Zoho MCP versions expose) that is not a draft or
+  template, into a ledger at `~/.claude/state/zoho_sends.jsonl` (override with
   `ZOHO_SEND_LEDGER`). Each line: `{"t": epoch, "to", "subject"}`. The file is locked, so
   parallel sessions share one count.
 - **A scheduled send counts at its scheduled time** (`isSchedule` + `scheduleType`/

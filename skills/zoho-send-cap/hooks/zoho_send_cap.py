@@ -6,8 +6,8 @@ after ~50 sends in 45 minutes; the block notice was filed to Spam). A cap writte
 in a project note gets skipped by the next session that never loads it, so the cap
 lives in a global hook, and it refuses the send instead of advising against it.
 
-Counts every ZohoMail_sendEmail / ZohoMail_sendReplyEmail that is not a draft or
-template. A scheduled send counts at its scheduled time. Ledger:
+Counts every ZohoMail_sendEmail / ZohoMail_sendReplyEmail (and the newer send_mail /
+reply_to_mail names) that is not a draft or template. A scheduled send counts at its scheduled time. Ledger:
 ~/.claude/state/zoho_sends.jsonl (one {"t": epoch, "to", "subject"} per send).
 
 Bulk sends belong on a bulk email provider, not the mailbox.
